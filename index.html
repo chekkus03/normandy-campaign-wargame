@@ -50,13 +50,7 @@
         .view-section {
             width: 100%;
             max-width: 900px;
-            display: none;
         }
-
-        /* Direct CSS Routing Magic using URL targets */
-        #ncw-categories { display: block; }
-        :target { display: block; }
-        :target ~ #ncw-categories { display: none; }
 
         .grid {
             display: grid;
@@ -118,29 +112,19 @@
         .btn:hover {
             background-color: var(--accent-hover);
         }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            gap: 0.5rem;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
-    <!-- SECTION 1: MAIN LEVEL FOLDERS -->
-    <div id="ncw-categories" class="view-section">
+    <header>
+        <h1>Normandy Campaign Wargame</h1>
+        <p>Select a category to view available tools or system documentation.</p>
+    </header>
+
+    <div class="view-section">
         <div class="grid">
             <!-- TOOLS FOLDER CARD -->
-            <a href="#tools" class="card">
+            <a href="./tools/" class="card">
                 <div>
                     <h2>Tools</h2>
                     <p>All official tools for the Normandy Campaign Wargame.</p>
@@ -148,52 +132,14 @@
                 <span class="btn" style="background: transparent; color: var(--accent); border: 1px solid var(--accent);">Go</span>
             </a>
 
-            <!-- SCENARIOS FOLDER CARD -->
-            <a href="#system" class="card">
+            <!-- SYSTEM FOLDER CARD -->
+            <a href="./system/" class="card">
                 <div>
                     <h2>System</h2>
                     <p>This contains the rules system and codex for the Normandy Campaign Wargame.</p>
                 </div>
                 <span class="btn" style="background: transparent; color: var(--accent); border: 1px solid var(--accent);">Go</span>
             </a>
-        </div>
-    </div>
-
-    <!-- SECTION 2: INSIDE THE /TOOLS SUBFOLDER -->
-    <div id="tools" class="view-section">
-        <a href="#" class="back-link">Back</a>
-        <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">Tools</h2>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h2>Campaign Manager</h2>
-                    <p>All ledgerkeeping for the game is done here.</p>
-                </div>
-                <a href="./tools/campaign-manager/" class="btn">Go</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h2>Unit Token Builder</h2>
-                    <p>Create tokens for your units from an imported roster file.</p>
-                </div>
-                <a href="./tools/unit-token-builder/" class="btn">Go</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- SECTION 3: INSIDE THE /SCENARIOS SUBFOLDER -->
-    <div id="system" class="view-section">
-        <a href="#" class="back-link">Back</a>
-        <h2 style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">System</h2>
-        <div class="grid">
-            <div class="card">
-                <div>
-                    <h2>Coming Soon!</h2>
-                    <p>TBD.</p>
-                </div>
-                <a href="./system/TBD/" class="btn">Go</a>
-            </div>
         </div>
     </div>
 
