@@ -4,4 +4,4 @@
 
 [submodule "tools/campaign-manager"]
 	path = tools/campaign-manager
-	url = https://github.com
+	url = https://github.com/chekkus03/campaign-manager
