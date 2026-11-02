@@ -1,0 +1,6 @@
+[submodule "tools/campaign-manager"]
+	path = tools/campaign-manager
+	url = https://github.com/chekkus03/campaign-manager.git
+[submodule "tools/unit-token-builder"]
+	path = tools/unit-token-builder
+	url = https://github.com/chekkus03/unit-token-builder.git
